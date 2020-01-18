@@ -1,10 +1,31 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
     <title>{% block title %}{% endblock %}</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/bootstrap.css' %}"
+    />
   </head>
   <body>
+    <nav
+      class="navbar navbar-light bg-light"
+      style="background-color: rgba(22, 66, 91, 1);"
+    >
+      <a class="navbar-brand" href="/">
+        <img
+          src="{% static 'images/logo.png' %}"
+          width="64"
+          height="64"
+          class="d-inline-block align-top"
+          alt="where2med"
+        />
+      </a>
+    </nav>
     {% block content %}{% endblock %}
   </body>
   {% block scripts %}{% endblock %}

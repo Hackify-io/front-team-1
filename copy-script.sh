@@ -23,6 +23,16 @@ fi
 
 cp node_modules/bootstrap/dist/css/bootstrap.min.css ../back-team-1/where2med/static/css
 
+# Copy images
+if [ -d ../back-team-1/where2med/static/images ]
+then
+    rm -Rf ../back-team-1/where2med/static/images/*
+else
+    mkdir -p ../back-team-1/where2med/static/images
+fi
+
+cp images/* ../back-team-1/where2med/static/images
+
 # Copy django templates
 if [ -d ../back-team-1/where2med/templates ]
 then
