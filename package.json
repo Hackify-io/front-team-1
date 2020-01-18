@@ -1,0 +1,42 @@
+{
+  "name": "where2med",
+  "version": "0.0.1",
+  "description": "A web application for medical tourism.",
+  "scripts": {
+    "build": "webpack --mode development",
+    "copy": "./copy-script.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hackify-io/front-team-1.git"
+  },
+  "keywords": [
+    "web",
+    "application",
+    "medical",
+    "tourism",
+    "react"
+  ],
+  "author": "PaperMonoid",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hackify-io/front-team-1/issues"
+  },
+  "homepage": "https://github.com/Hackify-io/front-team-1#readme",
+  "dependencies": {
+    "axios": "^0.19.1",
+    "bootstrap": "^4.4.1",
+    "react": "^16.12.0",
+    "react-bootstrap": "^1.0.0-beta.16",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  }
+}
