@@ -1,5 +1,4 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -12,11 +11,11 @@
     />
     <script
       type="text/javascript"
-      href="{% static 'js/jquery.min.js' %}"
+      src="{% static 'js/jquery.min.js' %}"
     ></script>
     <script
       type="text/javascript"
-      href="{% static 'js/bootstrap.min.js' %}"
+      src="{% static 'js/bootstrap.bundle.min.js' %}"
     ></script>
   </head>
   <body>
@@ -45,12 +44,8 @@
             >Sign Up</a
           >
           <div class="dropdown-menu">
-            <a class="dropdown-item nav-link text-white" href="/auth/signup"
-              >As patient</a
-            >
-            <a class="dropdown-item nav-link text-white" href="/auth/signup"
-              >As medical center</a
-            >
+            <a class="dropdown-item" href="/auth/signup">As patient</a>
+            <a class="dropdown-item" href="/auth/signup">As medical center</a>
           </div>
         </li>
         <li class="nav-item">
