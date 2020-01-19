@@ -11,7 +11,7 @@
     {% else %}
     <h3 class="title is-size3">{{ message }}</h3>
     <form method="POST">
-      {% csrf_token %} {{ form }}
+      {% csrf_token %} {{ form.as_p }}
       <br />
       <br />
       <button type="reset" class="btn">Cancel</button>
