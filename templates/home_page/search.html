@@ -8,34 +8,12 @@
 <link
   rel="stylesheet"
   type="text/css"
-  href="{% static 'css/home_page.css' %}"
+  href="{% static 'css/search.css' %}"
 />
 {% endblock %} {% block content %}
-<div class="home-background"></div>
 <div class="search-content">
   <div class="content">
-    <h1>“Better treatment, less steps”</h1>
-    <br/>
-    <br/>
     <h4>Find a specialist and get an appointment</h4>
-    <form>
-      <div class="form-row">
-        <div class="col">
-          <input
-            class="form-control"
-            type="text"
-            placeholder="Treatment"
-            autofocus
-          />
-        </div>
-        <div class="col">
-          <input class="form-control" type="text" placeholder="City" />
-        </div>
-        <div class="col">
-          <button class="btn btn-primary">Search</button>
-        </div>
-      </div>
-    </form>
     <div id="searchApp"></div>
   </div>
 </div>

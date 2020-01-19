@@ -17,11 +17,12 @@
       type="text/javascript"
       src="{% static 'js/bootstrap.bundle.min.js' %}"
     ></script>
+    {% block css %}{% endblock %}
   </head>
   <body>
     <nav
-      class="navbar navbar bg"
-      style="background-color: rgba(22, 66, 91, 1);"
+      class="navbar navbar-sticky bg"
+      style="background-color: rgba(22, 66, 91, 1); z-index: 9999;"
     >
       <a class="navbar-brand" href="/">
         <img
@@ -45,7 +46,9 @@
           >
           <div class="dropdown-menu">
             <a class="dropdown-item" href="/auth/signup_patient">As patient</a>
-            <a class="dropdown-item" href="/auth/signup_medical_center">As medical center</a>
+            <a class="dropdown-item" href="/auth/signup_medical_center"
+              >As medical center</a
+            >
           </div>
         </li>
         <li class="nav-item">

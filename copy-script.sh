@@ -22,6 +22,7 @@ else
     mkdir -p ../back-team-1/where2med/static/css
 fi
 
+cp css/*.css ../back-team-1/where2med/static/css
 cp node_modules/bootstrap/dist/css/bootstrap.min.css ../back-team-1/where2med/static/css
 
 # Copy images

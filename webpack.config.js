@@ -2,7 +2,7 @@ const path = require("path");
 
 module.exports = {
   entry: {
-    searchApp: "./src/searchApp.js"
+    searchApp: "./src/searchApp.jsx"
   },
   output: {
     path: path.resolve(__dirname, "dist"),
