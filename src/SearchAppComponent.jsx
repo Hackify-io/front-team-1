@@ -34,6 +34,9 @@ export default class SearchAppComponent extends Component {
         params: {
           treatment: this.state.treatment,
           city: this.state.city
+        },
+        headers: {
+          Authorization: `Token ${token}`
         }
       })
       .then(
