@@ -1,23 +1,18 @@
 {% extends 'base.html' %}
 
-{% block title %} Log In {% endblock %}
+{% block title %} Sign Up {% endblock %}
 
 {% block content %}
 <div class="container">
   <div class="notification">
-    {% if request.user.is_authenticated %}
-    <h3>User: {{ request.user }}</h3>
-    <a href="{% url 'logout' %}">Log Out</a>
-    {% else %}
     <h3 class="title is-size3">{{ message }}</h3>
     <form method="POST">
       {% csrf_token %} {{ form }}
       <br />
       <br />
       <button type="reset" class="btn">Cancel</button>
-      <button type="submit" class="btn btn-primary">Log In</button>
+      <button type="submit" class="btn btn-primary">Sign Up</button>
     </form>
-    {% endif %}
   </div>
 </div>
 {% endblock %}
