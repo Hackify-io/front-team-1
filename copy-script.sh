@@ -11,7 +11,7 @@ fi
 cp dist/*.bundle.js ../back-team-1/where2med/static/js
 cp node_modules/react/umd/react.production.min.js ../back-team-1/where2med/static/js
 cp node_modules/react-dom/umd/react-dom.production.min.js ../back-team-1/where2med/static/js
-cp node_modules/bootstrap/dist/js/bootstrap.bundle.js ../back-team-1/where2med/static/js
+cp node_modules/bootstrap/dist/js/bootstrap.min.js ../back-team-1/where2med/static/js
 cp node_modules/jquery/dist/jquery.min.js ../back-team-1/where2med/static/js
 
 # Copty CSS files
