@@ -36,7 +36,7 @@ export default class SearchAppComponent extends Component {
           city: this.state.city
         },
         headers: {
-          Authorization: `Token ${token}`
+          Authorization: `Token ${window.token}`
         }
       })
       .then(
